@@ -4,14 +4,14 @@ import CartCard from '../UI/CartCard';
 const Cart = (props) => {
     const cartItems = (
       <ul className={classes['cart-items']}>
-        {[{ id: 'c1', name: 'Sushi', amount: 2, price: 12.99 }].map((item) => (
-          <li>{item.name}</li>
+        {[{ id: 'c1', name: 'Sushi', amount: 1, price: 12.99 }].map((item) => (
+          <li> {item.name} </li>
         ))}
       </ul>
     );
 
   return (
-    <CartCard onClose={props.onClose}>
+    <CartCard>
       {cartItems}
       <div className={classes.total}>
         <span>Total Amount</span>
